@@ -918,7 +918,7 @@ static AVCodec *find_codec(enum AVCodecID id, int (*x)(const AVCodec *))
         }
     }
 
-    return first ? (AVCodec*)first :(AVCodec*)experimental;
+    return first ? (AVCodec*)first : (AVCodec*)experimental;
 }
 
 AVCodec *avcodec_find_encoder(enum AVCodecID id)
